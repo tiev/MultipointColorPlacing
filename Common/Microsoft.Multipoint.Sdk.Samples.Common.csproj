@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF0C3DBF-73D9-443A-A94B-B6206E92DBDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Multipoint.Sdk.Samples.Common</RootNamespace>
+    <AssemblyName>Microsoft.Multipoint.Sdk.Samples.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Multipoint.Sdk, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Microsoft.Multipoint.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CursorAssignment.cs" />
+    <Compile Include="CursorAssignments.cs" />
+    <Compile Include="Cursors\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MouseHelper.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuizIcon.ico" />
+    <None Include="Resources\MapIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursors\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cursors\1.png" />
+    <Content Include="Cursors\10.png" />
+    <Content Include="Cursors\11.png" />
+    <Content Include="Cursors\12.png" />
+    <Content Include="Cursors\13.png" />
+    <Content Include="Cursors\14.png" />
+    <Content Include="Cursors\15.png" />
+    <Content Include="Cursors\16.png" />
+    <Content Include="Cursors\17.png" />
+    <Content Include="Cursors\18.png" />
+    <Content Include="Cursors\19.png" />
+    <Content Include="Cursors\2.png" />
+    <Content Include="Cursors\20.png" />
+    <Content Include="Cursors\21.png" />
+    <Content Include="Cursors\22.png" />
+    <Content Include="Cursors\23.png" />
+    <Content Include="Cursors\24.png" />
+    <Content Include="Cursors\25.png" />
+    <Content Include="Cursors\26.png" />
+    <Content Include="Cursors\27.png" />
+    <Content Include="Cursors\28.png" />
+    <Content Include="Cursors\29.png" />
+    <Content Include="Cursors\3.png" />
+    <Content Include="Cursors\30.png" />
+    <Content Include="Cursors\31.png" />
+    <Content Include="Cursors\32.png" />
+    <Content Include="Cursors\33.png" />
+    <Content Include="Cursors\34.png" />
+    <Content Include="Cursors\35.png" />
+    <Content Include="Cursors\36.png" />
+    <Content Include="Cursors\37.png" />
+    <Content Include="Cursors\38.png" />
+    <Content Include="Cursors\39.png" />
+    <Content Include="Cursors\4.png" />
+    <Content Include="Cursors\40.png" />
+    <Content Include="Cursors\41.png" />
+    <Content Include="Cursors\42.png" />
+    <Content Include="Cursors\43.png" />
+    <Content Include="Cursors\44.png" />
+    <Content Include="Cursors\45.png" />
+    <Content Include="Cursors\46.png" />
+    <Content Include="Cursors\47.png" />
+    <Content Include="Cursors\48.png" />
+    <Content Include="Cursors\49.png" />
+    <Content Include="Cursors\5.png" />
+    <Content Include="Cursors\50.png" />
+    <Content Include="Cursors\51.png" />
+    <Content Include="Cursors\52.png" />
+    <Content Include="Cursors\53.png" />
+    <Content Include="Cursors\6.png" />
+    <Content Include="Cursors\7.png" />
+    <Content Include="Cursors\8.png" />
+    <Content Include="Cursors\9.png" />
+    <Content Include="Cursors\Teacher.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
